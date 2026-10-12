@@ -31,7 +31,7 @@ public class StudentDetails{
 
     @Override
     public String toString(){
-        return "Student Name: "+this.name+"\n" +
+        return "\nStudent Name: "+this.name+"\n" +
                 "Age: "+this.age+"\n" +
                 "Average Mark: "+this.mark+"\n" +
                 "Registered: "+this.status;

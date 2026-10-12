@@ -11,5 +11,12 @@ public class Main {
                 true
         );
         System.out.println(naledi);
+
+        ShoppingTotal shoppingTotal = new ShoppingTotal(
+                "HP Pavillion Gaming 15",
+                15000.00,
+                1
+        );
+        System.out.println(shoppingTotal);
     }
 }
