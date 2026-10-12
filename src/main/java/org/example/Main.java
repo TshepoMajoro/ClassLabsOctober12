@@ -12,11 +12,21 @@ public class Main {
         );
         System.out.println(naledi);
 
+        //Without discount
         ShoppingTotal shoppingTotal = new ShoppingTotal(
                 "HP Pavillion Gaming 15",
                 15000.00,
                 1
         );
         System.out.println(shoppingTotal);
+
+        //With a 10% discount
+        ShoppingTotal shoppingTotal2 = new ShoppingTotal(
+                "HP Pavillion Gaming 15",
+                15000.00,
+                1,
+                0.10
+        );
+        System.out.println(shoppingTotal2);
     }
 }
