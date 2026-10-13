@@ -33,17 +33,22 @@ public class ShoppingTotal {
 
     }
 
-    private void calculateTotalCost(){
+    public void calculateTotalCost(){
         this.discountAmount = (this.quantity * this.unitPrice) * discountRate;
         this.totalCost = (this.quantity * this.unitPrice) - this.discountAmount;
-    }
-
-    @Override
-    public String toString(){
-        return "\n\nProduct Name: "+this.productName+"\n" +
+        System.out.println("\n\nProduct Name: "+this.productName+"\n" +
                 "Unit Price: "+this.unitPrice+"\n" +
                 "Quantity: "+this.quantity+"\n" +
                 "Total Cost: "+this.totalCost+"\n" +
-                "Discount: "+this.discountAmount;
+                "Discount: "+this.discountAmount);
     }
+
+//    @Override
+//    public String toString(){
+//        return "\n\nProduct Name: "+this.productName+"\n" +
+//                "Unit Price: "+this.unitPrice+"\n" +
+//                "Quantity: "+this.quantity+"\n" +
+//                "Total Cost: "+this.totalCost+"\n" +
+//                "Discount: "+this.discountAmount;
+//    }
 }

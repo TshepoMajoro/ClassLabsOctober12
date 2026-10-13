@@ -29,11 +29,18 @@ public class StudentDetails{
         status = _status;
     }
 
-    @Override
-    public String toString(){
-        return "\nStudent Name: "+this.name+"\n" +
+    public void displayStudentDetails(){
+        System.out.println("\nStudent Name: "+this.name+"\n" +
                 "Age: "+this.age+"\n" +
                 "Average Mark: "+this.mark+"\n" +
-                "Registered: "+this.status;
+                "Registered: "+this.status);
     }
+
+//    @Override
+//    public String toString(){
+//        return "\nStudent Name: "+this.name+"\n" +
+//                "Age: "+this.age+"\n" +
+//                "Average Mark: "+this.mark+"\n" +
+//                "Registered: "+this.status;
+//    }
 }

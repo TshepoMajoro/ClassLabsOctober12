@@ -10,7 +10,7 @@ public class Main {
                 76.5,
                 true
         );
-        System.out.println(naledi);
+        naledi.displayStudentDetails();
 
         //Without discount
         ShoppingTotal shoppingTotal = new ShoppingTotal(
@@ -18,7 +18,7 @@ public class Main {
                 15000.00,
                 1
         );
-        System.out.println(shoppingTotal);
+        shoppingTotal.calculateTotalCost();
 
         //With a 10% discount
         ShoppingTotal shoppingTotal2 = new ShoppingTotal(
@@ -27,6 +27,18 @@ public class Main {
                 1,
                 0.10
         );
-        System.out.println(shoppingTotal2);
+        shoppingTotal2.calculateTotalCost();
+
+        TemperatureConverter convertedTemp = new TemperatureConverter(
+                32,
+                true
+        );
+        convertedTemp.convert();
+
+        TemperatureConverter convertedTemp2 = new TemperatureConverter(
+                60,
+                false
+        );
+        convertedTemp2.convert();
     }
 }
