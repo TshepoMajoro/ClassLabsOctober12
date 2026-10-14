@@ -3,7 +3,7 @@ package org.example;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    static void main() {
+    static void main() throws Exception {
         StudentDetails naledi = new StudentDetails(
                 "Naledi",
                 20,
@@ -78,5 +78,21 @@ public class Main {
 
         LoginCheck credentialsFailPassword = new LoginCheck("Jane_Doe","I@mJaneDoe");
         credentialsFailPassword.validateCredentials("Jane_Doe","!@mJaneDoe");
+
+
+        StudentMarks marks = new StudentMarks(new int[]{56, 65, 87, 60, 44});
+        marks.getStats();
+
+        ArrayStatistics stats = new ArrayStatistics(new int[]{2,5,7,86,90,65,43,67,12,34});
+        stats.acquireStatistics();
+
+        ArraySearch search = new ArraySearch(new int[]{2,5,7,32,5,3,5,6,64,2,35,6,7});
+        search.showIndex(2);
+
+        EvenOddArray mixedAray = new EvenOddArray(new int[]{2,5,7,32,5,3,5,6,64,2,35,6,7});
+        mixedAray.Display();
+
+        ReverseArray reverse = new ReverseArray(new int[] {1,2,3,4,5,6,7,8,9,10});
+        reverse.performReversal();
     }
 }
