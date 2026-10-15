@@ -94,5 +94,29 @@ public class Main {
 
         ReverseArray reverse = new ReverseArray(new int[] {1,2,3,4,5,6,7,8,9,10});
         reverse.performReversal();
+
+        Student studentPass = new Student("Marky Mark","2024819471",65);
+        studentPass.displayDetails();
+        Student studentFail = new Student("Jane Doe","2025927582",49);
+        studentFail.displayDetails();
+
+        BankAccount accountValid = new BankAccount("Jane Doe","123456789",1250);
+        System.out.println("Pre deposit balance: "+accountValid.getBalance());
+        accountValid.deposit(430);
+        System.out.println("Post deposit (i.e.R 430) balance: "+accountValid.getBalance());
+        accountValid.withdraw(50);
+        System.out.println("Post withdrawal (i.e. 50) balance: "+accountValid.getBalance());
+
+        Product product = new Product(1,"Casio",1300,5);
+        product.displayDetails();
+        product.makeASale(3);
+        product.displayDetails();
+        product.stockInventory(5);
+        product.displayDetails();
+
+        Rectangle rectangle = new Rectangle(100, 70);
+        rectangle.displayAreaAndPerimeter();
+        rectangle = new Rectangle(23, 50);
+        rectangle.displayAreaAndPerimeter();
     }
 }
