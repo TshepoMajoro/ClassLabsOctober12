@@ -118,5 +118,33 @@ public class Main {
         rectangle.displayAreaAndPerimeter();
         rectangle = new Rectangle(23, 50);
         rectangle.displayAreaAndPerimeter();
+
+        Lab5Student student1 = new Lab5Student("123456789","John Doe",new double[]{65,70,67});
+        student1.display();
+        Lab5Student student2 = new Lab5Student("214366789","Jane Doe",new double[]{58,73,79});
+        student2.display();
+        Lab5Student student3 = new Lab5Student("202356984","Joe Cage",new double[]{53,45,50});
+        student3.display();
+        student3.comparePerformance(new Lab5Student[]{student1,student2});
+
+        Lab5Product[] products = new Lab5Product[]{
+                new Lab5Product("T-shirt",200,3),
+                new Lab5Product("Trouser",350,1),
+                new Lab5Product("Belt",100,1),
+                new Lab5Product("Blazor",600,1)
+                };
+
+        Lab5Product.CartOfProducts cart = new Lab5Product.CartOfProducts(products);
+        cart.displayReceipt();
+
+        Employee[] employees = new Employee[]{
+                new Employee("HR00MNG","John Doe",35000),
+                new Employee("FIN01DPTYMNG","Jane Doe",25000),
+                new Employee("OP08SPVSR","Jackson Jenkins",19450),
+                new Employee("OP14GNRL","Dan Dorrison",8000)
+        };
+        Employee.EmployeeDashboard dashboard = new Employee.EmployeeDashboard(employees);
+        dashboard.display();
+
     }
 }
