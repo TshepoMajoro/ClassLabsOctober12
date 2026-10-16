@@ -101,11 +101,15 @@ public class Main {
         studentFail.displayDetails();
 
         BankAccount accountValid = new BankAccount("Jane Doe","123456789",1250);
-        System.out.println("Pre deposit balance: "+accountValid.getBalance());
-        accountValid.deposit(430);
-        System.out.println("Post deposit (i.e.R 430) balance: "+accountValid.getBalance());
-        accountValid.withdraw(50);
-        System.out.println("Post withdrawal (i.e. 50) balance: "+accountValid.getBalance());
+        System.out.println("Pre withdrawal balance: "+accountValid.getBalance());
+        accountValid.withdraw(430);
+        System.out.println("Post withdrawal (i.e.R 430) balance: "+accountValid.getBalance());
+        accountValid.withdraw(0);
+        System.out.println("Post withdrawal (i.e. 0) balance: "+accountValid.getBalance());
+        accountValid.withdraw(-500);
+        System.out.println("Post withdrawal (i.e. -500) balance: "+accountValid.getBalance());
+        accountValid.withdraw(820);
+        System.out.println("Post withdrawal (i.e. 820) balance: "+accountValid.getBalance());
 
         Product product = new Product(1,"Casio",1300,5);
         product.displayDetails();
@@ -133,7 +137,6 @@ public class Main {
                 new Lab5Product("Belt",100,1),
                 new Lab5Product("Blazor",600,1)
                 };
-
         Lab5Product.CartOfProducts cart = new Lab5Product.CartOfProducts(products);
         cart.displayReceipt();
 
